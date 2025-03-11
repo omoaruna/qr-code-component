@@ -15,11 +15,12 @@ body{
     gap: 30px;
 
 }
-/*  */
+
 section{
     background-color: hsl(0, 0%, 100%);
     margin: 0 auto;
 }
+/* End of Base Styles */
 section.qr-container{
     display: flex;
     flex-direction: column;
@@ -28,17 +29,21 @@ section.qr-container{
     text-align: center;
     padding: 15px 15px 45px 15px;
     border-radius: 15px ;
+    /* Hard-coded the width, I find it difficult to handle widths that are meant to act as containers
+    if that makes sense*/
     width: 340px;
-    height: fit-content;
+    
 }
-section.qr-container > *{
+/* section.qr-container > *{
     margin: 0 auto;
-}
+} */
 .qr-code img{
     border-radius: 15px;
 }
 .qr-container-content{
+    /* Also hard-coded the width here, same issue */
     width : 250px;
+    
 }
 .qr-container-header,
 .qr-container-content {
